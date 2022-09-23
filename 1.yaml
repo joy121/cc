@@ -5,55 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: CN 4 → TG@SCINV, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: CN 6 → TG@SCINV, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-  - {name: github.com/freefq+-+美国华盛顿Cogent通信公司+18, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
-  - {name: US+11+→+TG@SCINV, server: jgwcc2.gaox.ml, port: 443, type: trojan, password: 9c822f05-cfdc-479a-9534-60f3d4127435, sni: jgwcc2.gaox.ml, skip-cert-verify: true, udp: true}
-  - {name: Relay_US-US_78, server: xr-1.herokuapp.com, port: 443, type: vmess, uuid: 17af76e1-a5d7-41ab-ae87-b48f185075d1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /17af76e1-a5d7-41ab-ae87-b48f185075d1-vmess, ws-headers: {Host: xr-1.herokuapp.com}, udp: true}
-  - {name: CN+1+→+openitsub.com, server: ydgy.fosi.hk, port: 61209, type: trojan, password: f45a40cc-34b1-44f4-9699-5442191987b9, sni: ydgy.fosi.hk, skip-cert-verify: true, udp: true}
   - {name: CN+16+→+openitsub.com, server: ydgy.fosi.hk, port: 48272, type: trojan, password: 16c8c162-71ef-4d19-8a8e-c690aeb998d7, sni: ydgy.fosi.hk, skip-cert-verify: true, udp: true}
   - {name: CN+9+→+openitsub.com, server: gy.alhttdw.cn, port: 11721, type: trojan, password: f2e57fc2-f887-4b7c-9f99-3b3ec10cd0d7, sni: gy.alhttdw.cn, skip-cert-verify: true, udp: true}
+  - {name: US_77, server: 51.81.223.10, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_83, server: 51.81.223.26, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_51, server: 51.81.223.6, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_72, server: 51.81.223.14, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 9, server: 51.81.223.22, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_32, server: data-hk-v1.shwjfkw.cn, port: 50207, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: data-hk-v1.shwjfkw.cn}, udp: true}
+  - {name: Relay_🇨🇳CN-🇺🇸US_33, server: data-hk-v1.heisey.cn, port: 50205, type: vmess, uuid: b1478e24-4916-3abe-8f17-15931012ecbe, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /hls/cctv5phd.m3u8, ws-headers: {Host: tv.cctv.com}, udp: true}
+  - {name: CN 4 → TG@SCINV, server: 3.sg.zz.xxxxx.x-t-fuckword.network, port: 36679, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: CN 6 → TG@SCINV, server: 4.3.1.fuckppppp.today, port: 58418, type: vmess, uuid: 244effd9-0204-3c4a-8537-0dca4e5fd9b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: US_71, server: 51.81.223.32, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 4 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - github.com/freefq+-+美国华盛顿Cogent通信公司+18
-      - US+11+→+TG@SCINV
-      - Relay_US-US_78
-      - CN+1+→+openitsub.com
       - CN+16+→+openitsub.com
       - CN+9+→+openitsub.com
+      - US_77
+      - US_83
+      - US_51
+      - US_72
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 9
+      - Relay_🇨🇳CN-🇺🇸US_32
+      - Relay_🇨🇳CN-🇺🇸US_33
+      - CN 4 → TG@SCINV
+      - CN 6 → TG@SCINV
+      - US_71
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - CN 4 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - github.com/freefq+-+美国华盛顿Cogent通信公司+18
-      - US+11+→+TG@SCINV
-      - Relay_US-US_78
-      - CN+1+→+openitsub.com
       - CN+16+→+openitsub.com
       - CN+9+→+openitsub.com
+      - US_77
+      - US_83
+      - US_51
+      - US_72
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 9
+      - Relay_🇨🇳CN-🇺🇸US_32
+      - Relay_🇨🇳CN-🇺🇸US_33
+      - CN 4 → TG@SCINV
+      - CN 6 → TG@SCINV
+      - US_71
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 4 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - github.com/freefq+-+美国华盛顿Cogent通信公司+18
-      - US+11+→+TG@SCINV
-      - Relay_US-US_78
-      - CN+1+→+openitsub.com
       - CN+16+→+openitsub.com
       - CN+9+→+openitsub.com
+      - US_77
+      - US_83
+      - US_51
+      - US_72
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 9
+      - Relay_🇨🇳CN-🇺🇸US_32
+      - Relay_🇨🇳CN-🇺🇸US_33
+      - CN 4 → TG@SCINV
+      - CN 6 → TG@SCINV
+      - US_71
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -72,14 +88,18 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - CN 4 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - github.com/freefq+-+美国华盛顿Cogent通信公司+18
-      - US+11+→+TG@SCINV
-      - Relay_US-US_78
-      - CN+1+→+openitsub.com
       - CN+16+→+openitsub.com
       - CN+9+→+openitsub.com
+      - US_77
+      - US_83
+      - US_51
+      - US_72
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 9
+      - Relay_🇨🇳CN-🇺🇸US_32
+      - Relay_🇨🇳CN-🇺🇸US_33
+      - CN 4 → TG@SCINV
+      - CN 6 → TG@SCINV
+      - US_71
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -90,41 +110,53 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - CN 4 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - github.com/freefq+-+美国华盛顿Cogent通信公司+18
-      - US+11+→+TG@SCINV
-      - Relay_US-US_78
-      - CN+1+→+openitsub.com
       - CN+16+→+openitsub.com
       - CN+9+→+openitsub.com
+      - US_77
+      - US_83
+      - US_51
+      - US_72
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 9
+      - Relay_🇨🇳CN-🇺🇸US_32
+      - Relay_🇨🇳CN-🇺🇸US_33
+      - CN 4 → TG@SCINV
+      - CN 6 → TG@SCINV
+      - US_71
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - CN 4 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - github.com/freefq+-+美国华盛顿Cogent通信公司+18
-      - US+11+→+TG@SCINV
-      - Relay_US-US_78
-      - CN+1+→+openitsub.com
       - CN+16+→+openitsub.com
       - CN+9+→+openitsub.com
+      - US_77
+      - US_83
+      - US_51
+      - US_72
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 9
+      - Relay_🇨🇳CN-🇺🇸US_32
+      - Relay_🇨🇳CN-🇺🇸US_33
+      - CN 4 → TG@SCINV
+      - CN 6 → TG@SCINV
+      - US_71
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 4 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - github.com/freefq+-+美国华盛顿Cogent通信公司+18
-      - US+11+→+TG@SCINV
-      - Relay_US-US_78
-      - CN+1+→+openitsub.com
       - CN+16+→+openitsub.com
       - CN+9+→+openitsub.com
+      - US_77
+      - US_83
+      - US_51
+      - US_72
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 9
+      - Relay_🇨🇳CN-🇺🇸US_32
+      - Relay_🇨🇳CN-🇺🇸US_33
+      - CN 4 → TG@SCINV
+      - CN 6 → TG@SCINV
+      - US_71
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,14 +172,18 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - CN 4 → TG@SCINV
-      - CN 6 → TG@SCINV
-      - github.com/freefq+-+美国华盛顿Cogent通信公司+18
-      - US+11+→+TG@SCINV
-      - Relay_US-US_78
-      - CN+1+→+openitsub.com
       - CN+16+→+openitsub.com
       - CN+9+→+openitsub.com
+      - US_77
+      - US_83
+      - US_51
+      - US_72
+      - github.com/freefq - 美国弗吉尼亚州文特山农场OVH数据中心 9
+      - Relay_🇨🇳CN-🇺🇸US_32
+      - Relay_🇨🇳CN-🇺🇸US_33
+      - CN 4 → TG@SCINV
+      - CN 6 → TG@SCINV
+      - US_71
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
