@@ -44,6 +44,10 @@ proxies:
   - {name: github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 7, server: 159.89.29.136, port: 80, type: vmess, uuid: d20d6ede-433c-11ed-b81f-cfd905df9958, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /vmess, ws-headers: {Host: 159.89.29.136}, udp: true}
   - {name: github.com/freefq - 新加坡OVH 25, server: 139.99.91.95, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: github.com/freefq - 广东省广州市移动 29, server: akazz-1048-v2-2.tyo-r-kcd-a.nd.cjhh.mom, port: 39928, type: vmess, uuid: b46e5bfe-739c-4026-91fd-686209ce6d85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /je5x3pBN1vez3NQudNkB, ws-headers: {Host: node.inforun.work}, udp: true}
+  - {name: 美国_1002029, server: xiexi.tk, port: 2096, type: vmess, uuid: 37551ca0-8cc3-432f-ca1f-82aba1db3ef9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: xiexi.tk}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 3 2, server: 172.67.143.74, port: 443, type: vmess, uuid: A9A56660-4554-4278-863A-D3CE30294B59, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: pure.daycat.space}, udp: true}
+  - {name: github.com/freefq - 美国CloudFlare节点 12 2, server: 172.64.155.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg4.zhujicn2.com}, udp: true}
+  - {name: US 付费推荐：wxfz.ml, server: 172.64.155.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /dongtaiwang.com, ws-headers: {Host: lg3.zhujicn2.com}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -89,6 +93,10 @@ proxy-groups:
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 7
       - github.com/freefq - 新加坡OVH 25
       - github.com/freefq - 广东省广州市移动 29
+      - 美国_1002029
+      - github.com/freefq - 美国CloudFlare节点 3 2
+      - github.com/freefq - 美国CloudFlare节点 12 2
+      - US 付费推荐：wxfz.ml
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -133,6 +141,10 @@ proxy-groups:
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 7
       - github.com/freefq - 新加坡OVH 25
       - github.com/freefq - 广东省广州市移动 29
+      - 美国_1002029
+      - github.com/freefq - 美国CloudFlare节点 3 2
+      - github.com/freefq - 美国CloudFlare节点 12 2
+      - US 付费推荐：wxfz.ml
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -178,6 +190,10 @@ proxy-groups:
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 7
       - github.com/freefq - 新加坡OVH 25
       - github.com/freefq - 广东省广州市移动 29
+      - 美国_1002029
+      - github.com/freefq - 美国CloudFlare节点 3 2
+      - github.com/freefq - 美国CloudFlare节点 12 2
+      - US 付费推荐：wxfz.ml
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -235,6 +251,10 @@ proxy-groups:
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 7
       - github.com/freefq - 新加坡OVH 25
       - github.com/freefq - 广东省广州市移动 29
+      - 美国_1002029
+      - github.com/freefq - 美国CloudFlare节点 3 2
+      - github.com/freefq - 美国CloudFlare节点 12 2
+      - US 付费推荐：wxfz.ml
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -288,6 +308,10 @@ proxy-groups:
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 7
       - github.com/freefq - 新加坡OVH 25
       - github.com/freefq - 广东省广州市移动 29
+      - 美国_1002029
+      - github.com/freefq - 美国CloudFlare节点 3 2
+      - github.com/freefq - 美国CloudFlare节点 12 2
+      - US 付费推荐：wxfz.ml
   - name: 📲 电报信息
     type: select
     proxies:
@@ -332,6 +356,10 @@ proxy-groups:
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 7
       - github.com/freefq - 新加坡OVH 25
       - github.com/freefq - 广东省广州市移动 29
+      - 美国_1002029
+      - github.com/freefq - 美国CloudFlare节点 3 2
+      - github.com/freefq - 美国CloudFlare节点 12 2
+      - US 付费推荐：wxfz.ml
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -377,6 +405,10 @@ proxy-groups:
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 7
       - github.com/freefq - 新加坡OVH 25
       - github.com/freefq - 广东省广州市移动 29
+      - 美国_1002029
+      - github.com/freefq - 美国CloudFlare节点 3 2
+      - github.com/freefq - 美国CloudFlare节点 12 2
+      - US 付费推荐：wxfz.ml
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -431,6 +463,10 @@ proxy-groups:
       - github.com/freefq - 德国黑森州法兰克福DigitalOcean数据中心 7
       - github.com/freefq - 新加坡OVH 25
       - github.com/freefq - 广东省广州市移动 29
+      - 美国_1002029
+      - github.com/freefq - 美国CloudFlare节点 3 2
+      - github.com/freefq - 美国CloudFlare节点 12 2
+      - US 付费推荐：wxfz.ml
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
